@@ -1,0 +1,9 @@
+node {
+   stage("build"){
+       sh("go build .")
+   }
+
+   stage("test"){
+          sh("go test -v ./...")
+   }
+}
